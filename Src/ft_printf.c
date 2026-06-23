@@ -38,39 +38,3 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
-
-#include <limits.h>
-
-int main(void)
-{
-	int count;
-	char	*a = "teste";
-
-	count = 0;
-	count = ft_printf("%s", "Hello World!");
-	ft_printf("\n%d\n", count);
-	count = 0;
-	count = ft_printf("%c", 'A');
-	ft_printf("\n%d\n", count);
-	count = 0;
-	count = ft_printf("%d", -42);
-	ft_printf("\n%d\n", count);
-	count = 0;
-	count = ft_printf("%d", INT_MIN);
-	ft_printf("\n%d\n", count);
-	count = 0;
-	count = ft_printf("%x", 255);
-	ft_printf("\n%d\n", count);
-	count = 0;
-	count = ft_printf("%X", 255);
-	ft_printf("\n%d\n", count);
-	count = 0;
-	count = ft_printf("%p", a);
-	ft_printf("\n%d\n", count);
-	count = 0;
-	count = ft_printf("%d%%", 255);
-	ft_printf("\n%d\n", count);
-	count = 0;
-	count = ft_printf("%u", INT_MIN);
-	ft_printf("\n%d\n", count);
-}
