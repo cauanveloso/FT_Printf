@@ -6,7 +6,7 @@
 #    By: csilva-v <csilva-v@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/10 13:02:12 by csilva-v          #+#    #+#              #
-#    Updated: 2026/06/10 13:02:13 by csilva-v         ###   ########.fr        #
+#    Updated: 2026/06/24 10:39:26 by csilva-v         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ $(NAME): $(LIBFT) $(OBJS)
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	@$(RM) $(OBJS) $(BONUS_OBJECTS)
+	@$(RM) $(OBJS)
 	@$(MAKE) -C $(LIBFT_DIR) clean
 
 fclean: clean
